@@ -194,6 +194,9 @@
                     <artifactId>jetty-maven-plugin</artifactId>
                     <configuration>
                         <scanIntervalSeconds>5</scanIntervalSeconds>
+                        <httpConnector>
+                            <port>8081</port>
+                        </httpConnector>
                         <webApp>
                             <extraClasspath>${basedir}/../webprotege-shared/target/classes/</extraClasspath>
                         </webApp>

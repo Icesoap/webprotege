@@ -183,6 +183,11 @@
 
     <repositories>
         <repository>
+            <id>central</id>
+            <name>Maven Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
             <id>oss-sonatype</id>
             <name>OSS Sonatype Snapshot Repository</name>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
@@ -199,6 +204,14 @@
             </snapshots>
         </repository>
     </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>Maven Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <build>
 
@@ -239,7 +252,9 @@
                 <plugin>
                     <groupId>org.eclipse.jetty</groupId>
                     <artifactId>jetty-maven-plugin</artifactId>
-                    <version>9.4.12.v20180830</version>
+<!--                    <version>9.4.12.v20180830</version>-->
+                    <!-- 升级Jetty插件版本以支持较新的Java类文件格式 -->
+                    <version>9.4.58.v20250814</version>
                 </plugin>
                 <plugin>
                     <groupId>net.ltgt.gwt.maven</groupId>
