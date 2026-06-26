@@ -42,8 +42,6 @@ public class GetUsageActionHandler extends AbstractProjectActionHandler<GetUsage
     @Nonnull
     private final ReferencingAxiomVisitorFactory referencingAxiomVisitorFactory;
 
-    @Nonnull
-
     @Inject
     public GetUsageActionHandler(@Nonnull AccessManager accessManager,
                                  @Nonnull ProjectId projectId,

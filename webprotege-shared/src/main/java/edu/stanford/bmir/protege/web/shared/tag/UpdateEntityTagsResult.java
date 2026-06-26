@@ -19,7 +19,6 @@ public class UpdateEntityTagsResult implements Result, HasEventList<ProjectEvent
 
     private EventList<ProjectEvent<?>> eventList;
 
-    @Nonnull
     public UpdateEntityTagsResult(EventList<ProjectEvent<?>> eventList) {
         this.eventList = checkNotNull(eventList);
     }

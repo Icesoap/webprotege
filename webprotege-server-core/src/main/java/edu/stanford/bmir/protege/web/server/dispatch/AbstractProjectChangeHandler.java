@@ -29,7 +29,8 @@ public abstract class AbstractProjectChangeHandler<T, A extends ProjectAction<R>
     @Nonnull
     private final HasApplyChanges applyChanges;
 
-    @Nonnull
+
+
     public AbstractProjectChangeHandler(@Nonnull AccessManager accessManager,
                                         @Nonnull EventManager<ProjectEvent<?>> eventManager,
                                         @Nonnull HasApplyChanges applyChanges) {
